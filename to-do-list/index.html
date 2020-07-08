@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>TaskList</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Task List</span>
+                <div class="row">
+                    <div class="input-field">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <input type="text" id="new-task" class="validate">
+                        <label for="new-task">New Task</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="#" class="btn" id="addTaskBtn">Add Task</a>
+                </div>
+            </div>
+            <div class="card-action">
+                <span class="card-title">Tasks</span>
+                <div class="row">
+                    <div class="input-field">
+                        <i class="material-icons prefix">filter_lists</i>
+                        <input type="text" id="filter-tasks" class="validate">
+                        <label for="filter-tasks">Filter Tasks</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="collection" id="tasks"></ul>
+                </div>
+            </div>
+            <div class="card-action">
+                <a href="#" class="btn black" id="clearTaskBtn">Clear Tasks</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
