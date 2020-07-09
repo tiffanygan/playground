@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <title>Loan Calculator</title>
     <style>
         #image {
             display: block;
         }
         
+        #error,
         #image,
         #result-form {
             display: none;
@@ -19,15 +21,18 @@
 </head>
 
 <body class="bg-dark p-3">
+    <div class="alert alert-danger text-center" id="error" role="alert">
+        <h3>Please check your values!</h3>
+    </div>
     <div class="container w-50">
         <div class="card">
             <div class="card-body">
-                <h1 class="card-title text-center">Loan Calculator</h1>
+                <h3 class="card-title text-center">Loan Calculator</h3>
                 <!-- Input Form -->
                 <form>
                     <div class="form-group">
                         <div class="input-group">
-                            <div class="input-grou-prepend">
+                            <div class="input-group-prepend">
                                 <span class="input-group-text">$</span>
                             </div>
                             <input type="number" class="form-control" id="loan-amount" placeholder="Loan Amount">
@@ -35,7 +40,7 @@
                     </div>
                     <div class="form-group">
                         <div class="input-group">
-                            <div class="input-grou-prepend">
+                            <div class="input-group-prepend">
                                 <span class="input-group-text">%</span>
                             </div>
                             <input type="number" class="form-control" id="annual-intrest" placeholder="Annual Intrest">
@@ -45,7 +50,7 @@
                         <input type="number" class="form-control" id="num-years" placeholder="Repayment Years">
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-dark btn-block" id="calculate-btn">Calculate</button>
+                        <button class="btn btn-dark btn-block" id="calculate-btn" type="button">Calculate</button>
                     </div>
                 </form>
                 <!-- IMG -->
@@ -54,7 +59,7 @@
                 <form id="result-form">
                     <div class="form-group">
                         <div class="input-group">
-                            <div class="input-grou-prepend">
+                            <div class="input-group-prepend">
                                 <span class="input-group-text">Monthly Payment</span>
                             </div>
                             <input type="number" class="form-control" id="monthly-payment" disabled>
@@ -62,7 +67,7 @@
                     </div>
                     <div class="form-group">
                         <div class="input-group">
-                            <div class="input-grou-prepend">
+                            <div class="input-group-prepend">
                                 <span class="input-group-text">Total Payment</span>
                             </div>
                             <input type="number" class="form-control" id="tot-payment" disabled>
@@ -70,11 +75,14 @@
                     </div>
                     <div class="form-group">
                         <div class="input-group">
-                            <div class="input-grou-prepend">
+                            <div class="input-group-prepend">
                                 <span class="input-group-text">Total Intrest</span>
                             </div>
                             <input type="number" class="form-control" id="tot-intrest" disabled>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-outline-dark btn-block" id="clr-btn" type="reset" value="Clear">
                     </div>
                 </form>
             </div>
