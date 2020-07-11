@@ -42,10 +42,9 @@ a {
 
 #gadgets {
     height: 20vh;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     align-items: center;
+    padding-left: 1rem;
 }
 
 #gadgets * {
@@ -60,6 +59,15 @@ a {
 
 #gadgets a:hover {
     border-bottom: darkcyan 1px solid;
+}
+
+@media (max-width: 500px) {
+    #gadgets {
+        flex-direction: column;
+    }
+    #gadgets * {
+        padding: 0.25rem;
+    }
 }
 
 
