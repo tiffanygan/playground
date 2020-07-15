@@ -64,6 +64,7 @@ a {
 @media (max-width: 500px) {
     #gadgets {
         flex-direction: column;
+        height: 30vh;
     }
     #gadgets * {
         padding: 0.25rem;

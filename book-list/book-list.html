@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <title>Reading List</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <h1>Add Book</h1>
+        <form>
+            <div>
+                <label for="title">Book Title</label>
+                <input type="text" class="u-full-width" placeholder="Book Name" id="title">
+            </div>
+            <div>
+                <label for="author">Book Author</label>
+                <input type="text" class="u-full-width" placeholder="Book Author" id="author">
+            </div>
+            <div>
+                <label for="isbn">Book ISBN</label>
+                <input type="text" class="u-full-width" placeholder="Book ISBN" id="isbn">
+            </div>
+            <input type="submit" value="Submit" id="submit-btn">
+        </form>
+        <table class="u-full-width">
+            <thead>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th></th>
+            </thead>
+            <tbody id="book-table">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
