@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css">
+    <title>Custom HTTP Library</title>
+    <style>
+        #error {
+            display: none;
+            text-align: center;
+            border: red solid 1px;
+            cursor: auto;
+        }
+        .line {
+            height: 3px;
+            width: 5rem;
+            margin-bottom: 1rem;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div id="error" class="button"></div>
+        <h3>Custom HTTP Library</h3>
+        <form>
+            <div>
+                <label for="create-new-post">Creat a New Post</label>
+                <input type="text" id="create-new-post" placeholder="Post Title">
+            </div>
+            <button type="submit" class="button" id="submit-btn">Submit</button>
+        </form>
+        <div class="line" id="line"></div>
+        <button class="button button-primary" id="get-posts">Get Posts</button>
+        <ul></ul>
+    </div>
+
+    <script src="./easyhttp.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
