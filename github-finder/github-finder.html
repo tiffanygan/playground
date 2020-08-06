@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Github Finder</title>
+</head>
+
+<body>
+    <nav class="navbar bg-primary">
+        <h2 class="navbar-brand text-light">Github Finder</h2>
+    </nav>
+    <div class="container m-5">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Search Github Users</h3>
+                <p class="card-text lead">Enter a username to fetch a user's profile info and repos</p>
+                <form>
+                    <div class="form-group">
+                        <label for="username">Github Username...</label>
+                        <input type="text" id="username" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="response" class="card mt-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4 flex-container-column">
+                        <img src="#" height="250px">
+                        <a href="#" class="btn btn-primary mt-3" id="view-profile-btn">View Profile</a>
+                    </div>
+                    <div class="col-8">
+                        <div class="btns flex-container">
+                            <a href="#" class="btn btn-primary mr-3" id="public-repos"></a>
+                            <a href="#" class="btn btn-secondary mr-3" id="public-gists"></a>
+                            <a href="#" class="btn btn-info mr-3" id="following"></a>
+                            <a href="#" class="btn btn-success" id="followers"></a>
+                        </div>
+                        <ul class="list-group mt-3">
+                            <li id="company" class="list-group-item"></li>
+                            <li id="location" class="list-group-item"></li>
+                            <li id="member-since" class="list-group-item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center bg-light p-3">
+        Github Finder All Rights Reserved &copy; 2020
+    </footer>
+
+    <script src="./github.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./github-finder.js"></script>
+</body>
+
+</html>
