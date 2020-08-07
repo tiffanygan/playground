@@ -1,15 +1,30 @@
 const usernameInput = document.getElementById("username");
 usernameInput.addEventListener("keyup", getUser);
 
-let response;
+let test;
 
 function getUser() {
   const usernameValue = usernameInput.value;
   const github = new Github(`${usernameValue}`);
-  github
-    .getUser()
-    .then((responseObj) => {
-      response = responseObj;
-      Ui.showUser(responseObj);
-    });
+    if (usernameValue === '') {
+      Ui.hideUser();
+      Ui.hideRepos();
+      return;
+    }
+
+  github.getUser().then((responseObj) => {
+    Ui.hideAlert();
+
+    if (responseObj.message === 'Not Found') {
+      Ui.showAlert();
+      return null;
+    }
+    
+    Ui.showUser(responseObj);
+    return github.getRepos();
+  }).then( repoResponse => {
+    if (repoResponse) {
+      Ui.showRepos(repoResponse);
+    }
+  });
 }

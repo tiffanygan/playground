@@ -30,16 +30,16 @@
         <div id="response" class="card mt-3">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-4 flex-container-column">
-                        <img src="#" height="250px">
+                    <div class="col-md-4 flex-container-column">
+                        <img src="#" height="200px">
                         <a href="#" class="btn btn-primary mt-3" id="view-profile-btn">View Profile</a>
                     </div>
-                    <div class="col-8">
-                        <div class="btns flex-container">
-                            <a href="#" class="btn btn-primary mr-3" id="public-repos"></a>
-                            <a href="#" class="btn btn-secondary mr-3" id="public-gists"></a>
-                            <a href="#" class="btn btn-info mr-3" id="following"></a>
-                            <a href="#" class="btn btn-success" id="followers"></a>
+                    <div class="col-md-8">
+                        <div class="flex-container">
+                            <span class="badge badge-primary" id="public-repos"></span>
+                            <span class="badge badge-secondary" id="public-gists"></span>
+                            <span class="badge badge-info" id="following"></span>
+                            <span class="badge badge-success" id="followers"></span>
                         </div>
                         <ul class="list-group mt-3">
                             <li id="company" class="list-group-item"></li>
@@ -48,6 +48,23 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="repo-response" class="card mt-3">
+            <div class="card-body">
+                <ul class="list-group" id="repos-list">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-6 repo-name"></div>
+                            <div class="col-6">
+                                <span class="badge badge-primary repo-star"></span>
+                                <span class="badge badge-secondary repo-watchers"></span>
+                                <span class="badge badge-success repo-forks"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
