@@ -53,8 +53,8 @@ class Ui {
     const liClone = li.cloneNode(true);
     liClone.querySelector('div.repo-name').textContent = name;
     liClone.querySelector('span.repo-star').textContent = `Stars: ${stars}`;
-    liClone.querySelector('span.repo-watchers').textContent = `Stars: ${watchers}`;
-    liClone.querySelector('span.repo-forks').textContent = `Stars: ${forks}`;
+    liClone.querySelector('span.repo-watchers').textContent = `Watchers: ${watchers}`;
+    liClone.querySelector('span.repo-forks').textContent = `Forks: ${forks}`;
     return liClone;
   }
 

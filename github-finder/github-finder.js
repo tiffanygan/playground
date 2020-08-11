@@ -1,8 +1,6 @@
 const usernameInput = document.getElementById("username");
 usernameInput.addEventListener("keyup", getUser);
 
-let test;
-
 function getUser() {
   const usernameValue = usernameInput.value;
   const github = new Github(`${usernameValue}`);
