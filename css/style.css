@@ -15,7 +15,7 @@ a {
 
 /* Showcase */
 
-#showcase {
+.showcase {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -25,39 +25,47 @@ a {
     background-size: cover;
 }
 
-#showcase * {
+.showcase * {
     margin: 1rem;
 }
 
-#showcase h1 {
+.showcase h1 {
     font-size: 2.5rem;
 }
 
-#showcase h3 {
+.showcase h3 {
     font-size: 1.3rem;
+}
+
+.gadgets-showcase {
+    height: 75vh;
 }
 
 /* Gadgets */
 
-#gadgets {
-    height: 15vh;
+.gadgets {
+    height: 20vh;
     display: flex;
     align-items: center;
     padding-left: 1rem;
 }
 
-#gadgets * {
+.gadgets * {
     margin: auto;
 }
 
-#gadgets a {
+.gadgets a {
     font-size: 1.3rem;
     color: black;
     transition-duration: 500ms;
 }
 
-#gadgets a:hover {
+.gadgets a:hover {
     border-bottom: darkcyan 1px solid;
+}
+
+.small {
+    height: 10vh;
 }
 
 @media (max-width: 500px) {
