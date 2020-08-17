@@ -1,0 +1,20 @@
+[
+  {
+    "img": "https://randomuser.me/api/portraits/men/37.jpg",
+    "name": "John Doe",
+    "age": 35,
+    "location": "Fairbanks, AK"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/3.jpg",
+    "name": "Dexter Carter",
+    "age": 40,
+    "location": "Honolulu, HI"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/35.jpg",
+    "name": "Liam Johnson",
+    "age": 38,
+    "location": "Kaneohe, HI"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "img": "https://randomuser.me/api/portraits/men/43.jpg",
+    "name": "William Jones",
+    "age": 44,
+    "location": "Denver, CO"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/23.jpg",
+    "name": "Oliver Williams",
+    "age": 22,
+    "location": "Los Angeles, CA"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/women/22.jpg",
+    "name": "Madison Smith",
+    "age": 28,
+    "location": "Boston, MA"
+  }
+]

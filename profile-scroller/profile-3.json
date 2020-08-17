@@ -1,0 +1,26 @@
+[
+  {
+    "img": "https://randomuser.me/api/portraits/women/42.jpg",
+    "name": "Emma Brown",
+    "age": 27,
+    "location": "Pueblo, CO"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/women/61.jpg",
+    "name": "Ava Davis",
+    "age": 25,
+    "location": "Santa Barbara, CA"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/women/32.jpg",
+    "name": "Sophia Miller",
+    "age": 35,
+    "location": "Riverside, CA"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/women/2.jpg",
+    "name": "Charlotte Garcia",
+    "age": 37,
+    "location": "Hilo, HI"
+  }
+]
