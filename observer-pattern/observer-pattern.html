@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+        crossorigin="anonymous" />
+    <title>Observer Pattern</title>
+    <style>
+        .container {
+            margin-top: 3rem;
+        }
+        .hide {
+            display: none;
+        }
+        #fire {
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h4>Made using the observer pattern</h4>
+            <div class="one-half column">
+                <button class="button button-primary u-full-width" type="button" id="subscribe-milli">Subscribe to
+                    GetCurrentMilliseconds</button>
+            </div>
+            <div class="one-half column">
+                <button class="button u-full-width" type="button" id="unsubscribe-milli">Unsubscribe to
+                    GetCurrentMilliseconds</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-half column">
+                <button class="button button-primary u-full-width" type="button" id="subscribe-sec">Subscribe to
+                    GetCurrentSeconds</button>
+            </div>
+            <div class="one-half column">
+                <button class="button u-full-width" type="button" id="unsubscribe-sec">Unsubscribe to
+                    GetCurrentSeconds</button>
+            </div>
+        </div>
+        <button class="button u-full-width" id="fire">Fire</button>
+
+        <div>
+            <h5 id="text"></h5>
+        </div>
+        <div class="milli-response">
+            <h5 id="current-milli"></h5>
+        </div>
+        <div class="sec-response">
+            <h5 id="current-sec"></h5>
+        </div>
+        <div class="hide" id="easter-egg">
+            <h4>You have uncovered the easter egg! :D</h4>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
