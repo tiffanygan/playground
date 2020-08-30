@@ -18,14 +18,14 @@ class Ui {
     }
 
     changeMeal(mealId) {
-        const matchingMealObj = this.meals.filter(mealObj => mealObj.id === parseInt(mealId))[0];
+        const matchingMealObj = this.meals.find(mealObj => mealObj.id === parseInt(mealId));
         matchingMealObj.meal = document.getElementById('meal').value;
         matchingMealObj.caliores = document.getElementById('caliores').value;
         const icon = document.createElement('i');
         icon.classList = 'fas fa-pen secondary-content';
         document.getElementById(matchingMealObj.id).textContent = `${matchingMealObj.meal}: ${matchingMealObj.caliores} caliores`;
         document.getElementById(matchingMealObj.id).appendChild(icon);
-        this.backToNormal();
+        this.backToNormal();    
     }
 
     deleteMeal(mealId) {
