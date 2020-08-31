@@ -17,12 +17,6 @@ class UIController {
         return meal;
     }
 
-    updateMeal(meal) {
-        meal.name = this.mealInput.value;
-        meal.calories = parseInt(this.calorieInput.value);
-        return meal;
-    }
-
     showMeals(meals) {
         this.mealList.innerHTML = '';
         meals.forEach(meal => this.showMeal(meal));
@@ -44,6 +38,8 @@ class UIController {
     fillInput(meal) {
         this.mealInput.value = meal.name;
         this.calorieInput.value = meal.calories;
+        this.calorieInput.focus();
+        this.mealInput.focus();
     }
 
     clearInput() {

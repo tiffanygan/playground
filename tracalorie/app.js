@@ -3,6 +3,7 @@ const dataContainer = new DataContainer();
 let editMealId;
 
 uiController.setAddMealState();
+uiController.showMeals(dataContainer.getAll());
 
 uiController.addMealBtn.addEventListener('click', () => {
     const meal = uiController.createMeal();
@@ -22,10 +23,9 @@ uiController.mealList.addEventListener('click', (e) => {
 });
 
 uiController.changeMealBtn.addEventListener('click', () => {
-    const meal = dataContainer.findMealById(editMealId);
-    uiController.updateMeal(meal);
-    uiController.showMeals(dataContainer.getAll());
     uiController.setAddMealState();
+    dataContainer.updateMeal(editMealId, uiController.createMeal());
+    uiController.showMeals(dataContainer.getAll());
     uiController.clearInput();
 });
 
